@@ -73,7 +73,7 @@
     <param name="move_base/global_costmap/obstacle_layer/scan/max_obstacle_height" value="$(arg max_obstacle_height)"/>
 
   <!--  ************** AMCL ************** -->
-  <include file="$(find turtlebot_navigation)/launch/includes/amcl.launch.xml">
+  <include file="$(find turtlebot_navigation)/launch/includes/amcl/amcl.launch.xml">
     <arg name="scan_topic" value="$(arg laser_topic)"/>
     <arg name="use_map_topic" value="true"/>
     <arg name="odom_frame_id" value="$(arg odom_frame_id)"/>
